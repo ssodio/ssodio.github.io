@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soos Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b44b134a2f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-------------------------------- NAVBAR -------------------------------->
+
+    <div id="navbar">
+        <div class="nav-container">
+            <row>
+                <h1>Sulphine Susie Odio</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="files/resume.pdf" download="SulphineOdio_Resume.pdf">Resume</a></li>
+                </ul>
+            </row>
+        </div>
+    </div>
+
+    <!-------------------------------- HEADER -------------------------------->
+
+    <div id="header">
+        <div class="header-container">
+            <div class="header-list">
+                <div class=header>
+                    <img src="images/me.png">
+                </div>
+                <div class=header>
+                    <div class="header-text">
+                        <h1>Hi, I'm<br><span>Sulphine</span>.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------- ABOUT -------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hiya! My name is Sulphine Susie Odio, and I am a junior transfer student pursuing computer
+                        science at the <span>University of California, Berkeley</span>. I grew up in the east
+                        side of San Jose, CA,
+                        where
+                        I was surrounded by supportive family members, good food, and innovative tech companies!
+                        <br><br>
+                        I gravitate towards all-things-art, adore my STEM classes, and love seeing people with
+                        similar interests come together. Whether it was designing for my high school's
+                        yearbook, working as a <span>Front-End Web Development Intern at Infinity
+                            Enterprises</span>, or supporting my peers in the <span>Women in
+                            Computer Science
+                            Club</span>, I find
+                        joy in creative, challenging, and collaborative environments.
+                        <br><br>The versatility of computer
+                        science
+                        allows me to combine all of my passions. With that said, I am seeking opportunities in <span>UI/UX
+                            Design</span> and
+                        <span>Product Design</span>!
+                        <br><br>
+                        Thanks for stopping by! :)
+                    </p>
+                </div>
+                <div class="about-col-2">
+                    <img src="images/squig_1.png">
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education-tab')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience-tab')">Experience</p>
+                        <p class="tab-links" onclick="opentab('contact-tab')">Contact</p>
+                    </div>
+                    <div class="tab-contents" id="contact-tab">
+                        <ul>
+                            <li><span>Email</span><br>
+                                <a href="mailto: sulphineodio@berkeley.edu">sulphineodio@berkeley.edu</a>
+                            </li>
+                            <li><span>LinkedIn</span><br>
+                                <a href=https://www.linkedin.com/in/sulphineodio>linkedin.com/in/sulphineodio</a>
+                            </li>
+                            <li><span>Github</span><br>
+                                <a href=https://github.com/SulphineOdio>github.com/SulphineOdio</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience-tab">
+                        <ul>
+                            <li><span>September 2022 - Present</span><br>Graphic Designer, Student Assistant |
+                                Pre-College Scholars Program @ UC Berkeley
+                            </li>
+                            <li><span>December 2021 - May 2022</span><br>Front-End Web Developer Intern | Infinity
+                                Enterprises</li>
+                            <li><span>June 2021 - June 2022</span><br>Public Relations Officer | Women in Computer
+                                Science Club @ De Anza College</li>
+                            <li><span>April 2021 - December 2021</span><br>Mathematics/Physics Tutor | Student Success
+                                Center @ De Anza College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="education-tab">
+                        <ul>
+                            <li><span>August 2022 - May 2024</span><br>University of California, Berkeley - B.A.
+                                Computer Science<br><i>• Relevant Coursework: The Structure and Interpretation of Computer Programs</i></li>
+                            <li><span>July 2020 - July 2022</span><br>De Anza College - A.S.T. Computer Science<br><i>• Relevant Coursework: Data Structures, Object Oriented Analysis and Design, x86 Processor Assembly Language</i></li>
+                            <li><span>January 2021 - July 2022</span><br>Foothill College - A.S.T. Computer Science<br><i>• Relevant Coursework: Multivariable Calculus, Linear Algebra, Differential Equations, Physics of Mechanics, Physics of Electricity & Magnetism</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------- PORTFOLIO -------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="portfolio-list">
+                <div class=portfolio>
+                    <img src="images/inventagram.png">
+                    <div class="layer">
+                        <h3>Inventagram</h3>
+                        <p>A social media platform for historical inventors. Users can create an account or login to find friends with similar interests or by name.
+                            <br><br><span>Java</span></p>
+                        <a href="https://youtu.be/ccnHudJ3M5s"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class=portfolio>
+                    <img src="images/metalhead.png">
+                    <div class="layer">
+                        <h3>Metal Head</h3>
+                        <p>A horror story-based adventure game in which the user must collect items by navigating a board, use these items to dismantle a mind control device, and avoid dangerous consequences.<br><br><span>Java</span></p>
+                        <a href="https://www.youtube.com/watch?v=yNiW0HMisB8"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                
+                <div class=portfolio>
+                    <img src="images/yearbook.png">
+                    <div class="layer">
+                        <h3>Yearbook</h3>
+                        <p>Designed spreads and modules for the 2020 Silver Creek High School Yearbook.
+                            1st Place Infographic Design, 2nd Place Student Life Spread - JEANC Contest
+                            Honorable Mention for Photo Illustration - Walsworth Photo Contest 
+                            <br><br><span>Adobe Creative Cloud</span></p>
+                        <a href="https://jeanc.org/2695/contests/annual-contest/2020-annual-contest-winners/"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class=portfolio>
+                    <img src="images/grrumble_CreateAccount.png">
+                    <div class="layer">
+                        <h3>Grrumble</h3>
+                        <p>A reminder app that alerts users to feed and water their pets.<br><br><span>Adobe Creative Cloud, SwiftUI, Firebase</span></p>
+                    </div>
+                </div>
+                <div class=portfolio>
+                    <img src="images/alexey.png">
+                    <div class="layer">
+                        <h3>Alexey Brodovitch Tribute</h3>
+                        <p>A poster that pays homage to Alexey Brodovitch, one of the founding members of modern graphic design.<br><br><span>Adobe Creative Cloud</span></p>
+                    </div>
+                </div>
+                <div class=portfolio>
+                    <img src="images/tshirt.png">
+                    <div class="layer">
+                        <h3>De Anza Developers T-Shirt</h3>
+                        <p>Designed the first ever De Anza Developers T-Shirt. De Anza Developers strives to promote growth and participation within De Anza College's CS clubs.<br><br><span>Adobe Creative Cloud</span></p>
+                    </div>
+                </div>
+                <div class=portfolio>
+                    <img src="images/project_1.png">
+                    <div class="layer">
+                        <h3>Personal Website</h3>
+                        <p>This website!<br><br><span>HTML, CSS, JavaScript</span></p>
+                    </div>
+                </div>
+                
+                <div class=portfolio>
+                    <img src="images/shopsmALL.png">
+                    <div class="layer">
+                        <h3>Shop Small</h3>
+                        <p>An e-commerce website that connects customers with local small businesses.<br><br><span>React, JavaScript, Node.js, HTML, CSS, Firebase</span></p>
+                        <a href="https://devpost.com/software/shop-small"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                
+                
+                <div class=portfolio>
+                    <img src="images/BakeryMenu.png">
+                    <div class="layer">
+                        <h3>Thousand Islands Bakery</h3>
+                        <p>My family's bakery! We specialize in cookies with flavors from my country of a THOUSAND ISLANDS: the Philippines! Designed advertisements for social media outlet, product aesthetic, and packaging.<br><br><span>Canva, Adobe Creative Cloud</span></p>
+                        <a href="https://www.instagram.com/thousandislandsbakery/?hl=en"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------- CONTACT / FOOTER -------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sulphineodio"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SulphineOdio"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto: sulphineodio@berkeley.edu"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footer">
+                <p>made with HTML/CSS by Sulphine Susie Odio :)<br>hosted by Github</p>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------- JAVASCRIPT -------------------------------->
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        window.onscroll = function () { scrollFunction() };
+        var mq = window.matchMedia( "(max-width: 600px)" );
+
+        function scrollFunction() {
+            if(mq.matches) {
+                if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-600px";
+                }
+            }
+            else {
+                if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-80px";
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
