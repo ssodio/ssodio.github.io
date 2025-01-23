@@ -23,10 +23,14 @@
     src: url('./fonts/actionj.ttf') format('truetype');
 }
 
-/* BORDER */
-
-
 /* NAVBAR */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 240px;
+}
+
 ul.navbar {
     display: flex;
     align-items: center;
@@ -34,159 +38,141 @@ ul.navbar {
     flex-wrap: wrap;
     position: sticky;
     width: 100%;
+    gap: 1em;
 }
 
 ul.navbar li {
-    font-family: 'Figtree-Bold', monospace;
     display: inline-block;
-    margin-right: 15px; /* Add some spacing between items */
 }
 
 ul.navbar li a {
-    color: #212121;
+    color: #2c64a4;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Figtree-Bold';
+}
+
+ul.navbar li a:hover {
+    border-bottom: .15em solid #fcc34a;
+}
+
+#logo-corner {
+    width: 2.5em;
+}
+
+/* LANDING PAGE */
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: .7em;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    width: 100%;
+    gap: 1em;
+}
+
+.links a img {
+    width: 2em;
     text-decoration: none;
     position: relative;
 }
 
-/* ul.navbar li a:hover {
-    border-bottom: 2px solid #616161;
-} */
+.landing-page h1 {
+    color: #220d06;
+}
 
+#hello-im {
+    color: #e04819
+}
+
+#bg-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 72px 240px;
+    background-color: #fcc34a;
+}
+
+.about p {
+    color: #220d06;
+}
+
+.about h2 {
+    color: #220d06;
+}
 
 /* HEADERS AND BODY */
-html {
-    margin: 40px 160px;
-    font-family: 'Figtree', monospace;
-    letter-spacing: 0.015em;
-    color: #212121;
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        color: #2c64a4;
+        font-family: 'Action-Jackson', sans-serif;
+        font-size: 40px;
+        margin: 0px;
+    }
+    
+    h2 {
+        color: #2c64a4;
+        font-family: 'Action-Jackson', sans-serif;
+        font-size: 20px;
+        margin: 0px;
+    }
+  }
+
+body {
+    margin: 0px;
     background-color: #FEFEFA;
 }
 
+p, a, ul {
+    color: #2c64a4;
+    margin: 0px;
+    letter-spacing: 0.015em;
+    font-family: 'Figtree';
+    font-size: 18px;
+}
+
 h1 {
+    color: #2c64a4;
     font-family: 'Action-Jackson', sans-serif;
     font-size: 68px;
     margin: 0px;
 }
 
-p {
-    margin: 0px;
-}
-
-ul {
-    margin: 0px;
-}
-
 h2 {
+    color: #2c64a4;
     font-family: 'Action-Jackson', sans-serif;
     font-size: 48px;
     margin: 0px;
 }
 
 h3 {
+    color: #2c64a4;
     font-family: 'Figtree-Bold';
     letter-spacing: 0.015em;
+    font-size: 18px;
     margin: 0px;
 }
 
 h4 {
+    color: #2c64a4;
     font-family: 'Figtree-Italic';
     letter-spacing: 0.015em;
+    font-size: 18px;
     margin: 0px;
-}
-
-div {
-    padding-bottom: 40px;
-}
-
-img {
-    width: 300px;
-}
-
-a {
-    color: #080808;
-}
-
-#smile {
-    position: absolute;
-    width: 30px;
-}
-
-div.intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    position: sticky;
-    width: 100%;
-    padding-bottom: 0px;
-}
-
-div.intro h1 {
-    text-align: center;
-    width: 50%;
-    min-width : 340px;
-}
-
-div.intro img {
-    width: 30%;
-    min-width : 380px;
-}
-
-div.about-sub {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px 60px;
-    position: sticky;
-    width: 100%;
-}
-
-div.about-sub p {
-    width: 70%;
-}
-
-div.about-sub img {
-    width: 24%;
-    min-width : 200px;
-}
-
-div.projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-    position: sticky;
-    width: 100%;
-}
-
-div.projects a:hover {
-  transform: scale(1.02);
-}
-
-#eyeball_bg1 {
-    position: absolute;
-    top: 20%;
-    left: 90%;
-}
-
-#eyeball_bg2 {
-    position: absolute;
-    top: 80%;
-    left: -12%;
-}
-
-#eyeball_bg3 {
-    position: absolute;
-    top: 150%;
-    left: 90%;
-}
-
-#eyeball_bg4 {
-    position: absolute;
-    width: 25%;
-    top: 40%;
-    left: 70%;
 }
