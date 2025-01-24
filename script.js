@@ -1,17 +1,16 @@
-const highlightNavbar = () => {
-    const home = document.getElementById("home-tab");
-    const portfolio = document.getElementById("portfolio-tab");
-    const resume = document.getElementById("resume-tab");
-    const contact = document.getElementById("contact-tab");
-  
-    home.addEventListener("click", (event) => {
-        home.style.borderBottom = "2px solid #616161";
-        portfolio.style.borderBottom = none;
-        resume.style.borderBottom = none;
-        contact.style.borderBottom = none;
-    });
-};
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
 
-document.addEventListener("DOMContentLoaded", () => {
-    highlightNavbar();
-});
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
