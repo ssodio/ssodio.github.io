@@ -28,6 +28,7 @@
 .main-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 24px 240px;
     background-color: #FEFEFA;
     position: sticky;
@@ -70,8 +71,16 @@ ul.navbar li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1em;
+    padding: 20px 0 0 0;
+}
+
+.landing-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 0.4em;
-    padding: 1em 0 0 0;
 }
 
 .links {
@@ -79,13 +88,16 @@ ul.navbar li a:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
     gap: 1em;
 }
 
 .links a img {
     width: 2em;
     text-decoration: none;
+}
+
+.links a:hover {
+    transform: scale(1.02);
 }
 
 .landing-page h1 {
@@ -104,26 +116,17 @@ ul.navbar li a:hover {
 
 /* ABOUT */
 
-.about {
-    padding: 120px 240px 60px 240px;
-}
-
-.about h2 {
-    color: #e04819;
+.right-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
 }
 
 /* PORTFOLIO */
 
-.portfolio {
-    padding: 100px 240px 40px 240px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1em;
-}
-
 #leaves {
-    width: 4em;
+    width: 3.6em;
 }
 
 .projects {
@@ -131,8 +134,7 @@ ul.navbar li a:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px 10px;
-    width: 100%;
+    gap: 0.8em;
 }
 
 .projects img {
@@ -151,25 +153,17 @@ ul.navbar li a:hover {
 
 /* EDUCATION */
 
-.education {
-    padding: 100px 240px 40px 240px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
 .school {
     display: flex;
-    gap: 1em;
+    gap: 0.8em;
     align-items: center;
+    justify-content: space-between;
 }
 
-.school h3 {
-    color: #528c02;
-}
-
-.school h4 {
-    color: #528c02;
+.schools {
+    display: flex;
+    gap: 0.6em;
+    flex-direction: column;
 }
 
 #school-logo {
@@ -178,17 +172,10 @@ ul.navbar li a:hover {
 
 /* EXPERIENCE */
 
-.experience {
-    padding: 100px 240px 40px 240px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
 .experience-title {
     display: flex;
     align-items: flex-end;
-    gap: 3em;
+    gap: 1em 3em;
     flex-wrap: wrap;
 }
 
@@ -216,7 +203,7 @@ ul.navbar li a:hover {
 
 .tab {
     cursor: pointer;
-    padding-left: 1em;
+    padding-left: 0.6em;
     max-width: 16em;
 }
 
@@ -245,18 +232,6 @@ ul.navbar li a:hover {
 }
 
 /* SKILLS */
-
-.skills {
-    padding: 100px 240px 40px 240px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.skills-content-img {
-    display: flex;
-    align-items: flex-end;
-}
 
 .skills-content {
     display: flex;
@@ -293,7 +268,7 @@ ul.navbar li a:hover {
 /* FOOTER */
 
 .last-soos {
-    padding: 40px 240px;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,154 +293,6 @@ ul.navbar li a:hover {
 }
 
 /* HEADERS AND BODY */
-
-@media only screen and (max-width: 800px) {
-
-    /* NAV */
-
-    .main-nav {
-        padding: 24px 40px;
-    }
-
-    .main-nav li a {
-        font-size: 14px;
-    }
-
-    /* LANDING PAGE */
-
-    .landing-page {
-        margin: 0;
-        padding: 80px 0px 0px 0px;
-        gap: 1em;
-        overflow: hidden;
-    }
-
-    .landing-page h1 {
-        font-size: 52px;
-    }
-
-    .landing-page p {
-        font-size: 14px;
-    }
-
-    #bg-image {
-        width: 160%;
-        height: auto;
-        overflow: hidden;
-    }
-
-    /* ABOUT */
-
-    .about {
-        padding: 80px 40px;
-    }
-
-    .about h2 {
-        font-size: 40px;
-    }
-
-    .about p {
-        font-size: 14px;
-    }
-
-    /* PORTFOLIO */
-
-    .portfolio {
-        padding: 80px 40px;
-    }
-
-    .portfolio h2 {
-        font-size: 40px;
-    }
-
-    .projects img {
-        width: 14em;
-    }
-    
-    .projects a img {
-        width: 12em;
-    }
-
-    /* EDUCATION */
-
-    .education {
-        padding: 80px 40px;
-    }
-
-    .education h2 {
-        font-size: 40px;
-    }
-
-    .education h3 {
-        font-size: 14px;
-    }
-
-    .education h4 {
-        font-size: 14px;
-    }
-
-    .education p {
-        font-size: 14px;
-    }
-
-    /* EXPERIENCE */
-
-    .experience {
-        padding: 80px 40px;
-    }
-
-    .experience h2 {
-        font-size: 40px;
-    }
-
-    .experience h3 {
-        font-size: 14px;
-    }
-
-    .experience h4 {
-        font-size: 14px;
-    }
-
-    .experience li {
-        font-size: 14px;
-    }
-
-    .experience-content {
-        gap: 1em;
-    }
-    
-    /* SKILLS */
-
-    .skills {
-        padding: 100px 40px;
-    }
-
-    .skills h2 {
-        font-size: 40px;
-    }
-
-    .skills h3 {
-        font-size: 14px;
-    }
-
-    .skills-img img {
-        max-width: 6em;
-    }
-
-    /* FOOTER */
-
-    .last-soos {
-        padding: 0px 40px 40px 40px;
-    }
-
-    .footer {
-        padding: 40px 10px;
-    }
-
-    .footer p {
-        font-size: 14px;
-    }
-}
 
 body {
     margin: 0px;
@@ -510,4 +337,131 @@ h4 {
     letter-spacing: 0.015em;
     font-size: 18px;
     margin: 0px;
+}
+
+.right-title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 100px 240px 40px 240px;
+}
+
+.center-title-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    padding: 100px 240px 40px 240px;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 850px) {
+
+    .right-title-section {
+        gap: 1em;
+        padding: 140px 40px 0px 40px;
+    }
+
+    .right-title-section h2 {
+        font-size: 40px;
+    }
+
+    .right-title-section h3 {
+        font-size: 14px;
+    }
+
+    .right-title-section h4 {
+        font-size: 14px;
+    }
+
+    .right-title-section li {
+        font-size: 14px;
+    }
+
+    .right-title-section p {
+        font-size: 14px;
+    }
+    
+    .center-title-section {
+        gap: 1em;
+        padding: 140px 40px 0px 40px;
+    }
+
+    .center-title-section h2 {
+        font-size: 40px;
+    }
+
+    /* NAV */
+
+    .main-nav {
+        padding: 24px 40px;
+    }
+
+    .main-nav li a {
+        font-size: 14px;
+    }
+
+    /* LANDING PAGE */
+
+    .landing-page {
+        margin: 0;
+        padding: 80px 0px 0px 0px;
+        gap: 1em;
+        overflow: hidden;
+    }
+
+    .landing-page h1 {
+        font-size: 52px;
+    }
+
+    .landing-page p {
+        font-size: 14px;
+    }
+
+    #bg-image {
+        width: 150%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    /* PORTFOLIO */
+
+    .projects img {
+        width: 14em;
+    }
+    
+    .projects a img {
+        width: 12em;
+    }
+
+    /* EXPERIENCE */
+
+    .experience-content {
+        gap: 1em;
+    }
+    
+    /* SKILLS */
+
+    .skills-img img {
+        max-width: 6em;
+    }
+
+    /* FOOTER */
+
+    .last-soos {
+        padding: 40px;
+    }
+
+    .footer {
+        padding: 40px 10px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    #footer-soos {
+        max-width: 6em;
+    }
 }
