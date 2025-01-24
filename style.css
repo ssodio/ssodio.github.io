@@ -338,31 +338,47 @@ ul.navbar li a:hover {
     }
 
     .about {
-        padding: 120px 20px;
+        padding: 120px 40px;
     }
 
     .portfolio {
-        padding: 120px 20px;
+        padding: 120px 40px;
     }
 
     .education {
-        padding: 120px 20px;
+        padding: 120px 40px;
     }
 
     .experience {
-        padding: 120px 20px;
+        padding: 120px 40px;
     }
 
     .skills {
-        padding: 120px 20px;
+        padding: 120px 40px;
+    }
+
+    body p {
+        font-size: 14px;
+    }
+
+    .skills h2 {
+        font-size: 40px;
+    }
+
+    .skills h3 {
+        font-size: 14px;
     }
 
     .last-soos {
-        padding: 0px 20px 40px 20px;
+        padding: 0px 40px 40px 40px;
     }
 
     .footer {
         padding: 40px 10px;
+    }
+
+    .footer p {
+        font-size: 14px;
     }
 }
 
