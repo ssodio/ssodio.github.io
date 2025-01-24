@@ -3,19 +3,19 @@
 @font-face {
     font-family: 'Figtree';
     src: url('./fonts/Figtree/fonts/webfonts/Figtree-Regular.woff2') format('woff2'),
-         url('./fonts/Figtree/fonts/ttf/Figtree-Regular.ttf') format('truetype');
+        url('./fonts/Figtree/fonts/ttf/Figtree-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Figtree-Bold';
     src: url('./fonts/Figtree/fonts/webfonts/Figtree-Bold.woff2') format('woff2'),
-         url('./fonts/Figtree/fonts/ttf/Figtree-Bold.ttf') format('truetype');
+        url('./fonts/Figtree/fonts/ttf/Figtree-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Figtree-Italic';
     src: url('./fonts/Figtree/fonts/webfonts/Figtree-Italic.woff2') format('woff2'),
-         url('./fonts/Figtree/fonts/ttf/Figtree-Italic.ttf') format('truetype');
+        url('./fonts/Figtree/fonts/ttf/Figtree-Italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -23,10 +23,17 @@
     src: url('./fonts/actionj.ttf') format('truetype');
 }
 
-/* BORDER */
-
-
 /* NAVBAR */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 240px;
+    background-color: #FEFEFA;
+    position: sticky;
+    top: 0;
+}
+
 ul.navbar {
     display: flex;
     align-items: center;
@@ -34,161 +41,372 @@ ul.navbar {
     flex-wrap: wrap;
     position: sticky;
     width: 100%;
+    gap: 0.8em;
 }
 
 ul.navbar li {
-    font-family: 'Figtree-Bold', monospace;
     display: inline-block;
-    margin-right: 15px; /* Add some spacing between items */
 }
 
 ul.navbar li a {
-    color: #212121;
+    color: #2c64a4;
     text-decoration: none;
     position: relative;
+    font-family: 'Figtree-Bold';
 }
 
-/* ul.navbar li a:hover {
-    border-bottom: 2px solid #616161;
-} */
+ul.navbar li a:hover {
+    border-bottom: .18em solid #fcd990;
+}
 
+#logo-corner {
+    width: 2.5em;
+}
+
+/* LANDING PAGE */
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    padding: 1em 0 0 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+}
+
+.links a img {
+    width: 2em;
+    text-decoration: none;
+}
+
+.landing-page h1 {
+    color: #220d06;
+}
+
+#hello-im {
+    color: #e04819;
+}
+
+#bg-image {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 120px 240px 60px 240px;
+}
+
+.about h2 {
+    color: #e04819;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    padding: 100px 240px 40px 240px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#leaves {
+    width: 4em;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    width: 100%;
+}
+
+.projects img {
+    width: 18em;
+    border-radius: 0.4em;
+}
+
+.projects a img {
+    width: 16em;
+    border-radius: 0.4em;
+}
+
+.projects a:hover {
+    transform: scale(1.02);
+}
+
+/* EDUCATION */
+
+.education {
+    padding: 100px 240px 40px 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.school {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.school h3 {
+    color: #528c02;
+}
+
+.school h4 {
+    color: #528c02;
+}
+
+#school-logo {
+    max-width: 8em;
+}
+
+/* EXPERIENCE */
+
+.experience {
+    padding: 100px 240px 40px 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.experience-title {
+    display: flex;
+    align-items: flex-end;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.experience-content {
+    display: flex;
+    gap: 3em;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    cursor: pointer;
+    padding-left: 1em;
+    max-width: 16em;
+}
+
+.tab-content {
+    max-width: 44em;
+}
+
+.tab-content h3 {
+    color: #2c64a4;
+}
+
+.tab-content h4 {
+    color: #2c64a4;
+}
+
+.tab.active {
+    border-left: .2em solid #fcd990;
+}
+
+.tab:hover {
+    border-left: .2em solid #fcd990;
+}
+
+#experience-soos {
+    max-width: 12em;
+}
+
+/* SKILLS */
+
+.skills {
+    padding: 100px 240px 40px 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.skills-content-img {
+    display: flex;
+    align-items: flex-end;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+.skills-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    justify-content: center;
+}
+
+.skills-img img {
+    width: 8em;
+    border-radius: 0.8em;
+}
+
+#skills-soos {
+    width: 20em;
+    height: auto;
+}
+
+/* FOOTER */
+
+.last-soos {
+    padding: 40px 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-soos {
+    max-width: 8em;
+}
+
+.footer {
+    padding: 32px;
+    background-color: #e04819;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: #FEFEFA;
+    text-align: center;
+}
 
 /* HEADERS AND BODY */
-html {
-    margin: 40px 160px;
-    font-family: 'Figtree', monospace;
-    letter-spacing: 0.015em;
-    color: #212121;
+
+@media only screen and (max-width: 800px) {
+    .main-nav {
+        padding: 20px 20px;
+    }
+
+    #bg-image {
+        width: 160%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .landing-page {
+        margin: 0;
+        padding: 120px 0px 0px 0px;
+        gap: 1em;
+        overflow: hidden;
+    }
+
+    .about {
+        padding: 120px 20px;
+    }
+
+    .portfolio {
+        padding: 120px 20px;
+    }
+
+    .education {
+        padding: 120px 20px;
+    }
+
+    .experience {
+        padding: 120px 20px;
+    }
+
+    .skills {
+        padding: 120px 20px;
+    }
+
+    .last-soos {
+        padding: 0px 20px 40px 20px;
+    }
+
+    .footer {
+        padding: 40px 10px;
+    }
+}
+
+body {
+    margin: 0px;
     background-color: #FEFEFA;
 }
 
+p,
+a,
+ul {
+    color: #2c64a4;
+    margin: 0px;
+    letter-spacing: 0.015em;
+    font-family: 'Figtree';
+    font-size: 18px;
+}
+
 h1 {
+    color: #2c64a4;
     font-family: 'Action-Jackson', sans-serif;
     font-size: 68px;
     margin: 0px;
 }
 
-p {
-    margin: 0px;
-}
-
-ul {
-    margin: 0px;
-}
-
 h2 {
+    color: #e04819;
     font-family: 'Action-Jackson', sans-serif;
     font-size: 48px;
     margin: 0px;
 }
 
 h3 {
+    color: #528c02;
     font-family: 'Figtree-Bold';
     letter-spacing: 0.015em;
+    font-size: 18px;
     margin: 0px;
 }
 
 h4 {
+    color: #528c02;
     font-family: 'Figtree-Italic';
     letter-spacing: 0.015em;
+    font-size: 18px;
     margin: 0px;
-}
-
-div {
-    padding-bottom: 40px;
-}
-
-img {
-    width: 300px;
-}
-
-a {
-    color: #080808;
-}
-
-#smile {
-    position: absolute;
-    width: 30px;
-}
-
-div.intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    position: sticky;
-    width: 100%;
-    padding-bottom: 0px;
-}
-
-div.intro h1 {
-    text-align: center;
-    width: 50%;
-    min-width : 340px;
-}
-
-div.intro img {
-    width: 30%;
-    min-width : 380px;
-}
-
-div.about-sub {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px 60px;
-    position: sticky;
-    width: 100%;
-}
-
-div.about-sub p {
-    width: 70%;
-}
-
-div.about-sub img {
-    width: 24%;
-    min-width : 200px;
-}
-
-div.projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-    position: sticky;
-    width: 100%;
-}
-
-div.projects a:hover {
-   
-  transform: scale(1.02);
-
-}
-
-#eyeball_bg1 {
-    position: absolute;
-    top: 20%;
-    left: 90%;
-}
-
-#eyeball_bg2 {
-    position: absolute;
-    top: 80%;
-    left: -12%;
-}
-
-#eyeball_bg3 {
-    position: absolute;
-    top: 150%;
-    left: 90%;
-}
-
-#eyeball_bg4 {
-    position: absolute;
-    width: 25%;
-    top: 40%;
-    left: 70%;
 }
