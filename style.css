@@ -281,12 +281,12 @@ ul.navbar li a:hover {
 }
 
 .skills-img img {
-    width: 8em;
+    max-width: 8em;
     border-radius: 0.8em;
 }
 
 #skills-soos {
-    width: 20em;
+    max-width: 20em;
     height: auto;
 }
 
@@ -320,8 +320,32 @@ ul.navbar li a:hover {
 /* HEADERS AND BODY */
 
 @media only screen and (max-width: 800px) {
+
+    /* NAV */
+
     .main-nav {
-        padding: 20px 20px;
+        padding: 32px 40px;
+    }
+
+    .main-nav li a {
+        font-size: 14px;
+    }
+
+    /* LANDING PAGE */
+
+    .landing-page {
+        margin: 0;
+        padding: 100px 0px 0px 0px;
+        gap: 1em;
+        overflow: hidden;
+    }
+
+    .landing-page h1 {
+        font-size: 52px;
+    }
+
+    .landing-page p {
+        font-size: 14px;
     }
 
     #bg-image {
@@ -330,35 +354,90 @@ ul.navbar li a:hover {
         overflow: hidden;
     }
 
-    .landing-page {
-        margin: 0;
-        padding: 120px 0px 0px 0px;
-        gap: 1em;
-        overflow: hidden;
-    }
+    /* ABOUT */
 
     .about {
-        padding: 120px 40px;
+        padding: 80px 40px;
     }
+
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    /* PORTFOLIO */
 
     .portfolio {
-        padding: 120px 40px;
+        padding: 80px 40px;
     }
+
+    .portfolio h2 {
+        font-size: 40px;
+    }
+
+    .projects img {
+        width: 14em;
+    }
+    
+    .projects a img {
+        width: 12em;
+    }
+
+    /* EDUCATION */
 
     .education {
-        padding: 120px 40px;
+        padding: 80px 40px;
     }
+
+    .education h2 {
+        font-size: 40px;
+    }
+
+    .education h3 {
+        font-size: 14px;
+    }
+
+    .education h4 {
+        font-size: 14px;
+    }
+
+    .education p {
+        font-size: 14px;
+    }
+
+    /* EXPERIENCE */
 
     .experience {
-        padding: 120px 40px;
+        padding: 80px 40px;
     }
+
+    .experience h2 {
+        font-size: 40px;
+    }
+
+    .experience h3 {
+        font-size: 14px;
+    }
+
+    .experience h4 {
+        font-size: 14px;
+    }
+
+    .experience li {
+        font-size: 14px;
+    }
+
+    .experience-content {
+        gap: 1em;
+    }
+    
+    /* SKILLS */
 
     .skills {
-        padding: 120px 40px;
-    }
-
-    body p {
-        font-size: 14px;
+        padding: 100px 40px;
     }
 
     .skills h2 {
@@ -368,6 +447,8 @@ ul.navbar li a:hover {
     .skills h3 {
         font-size: 14px;
     }
+
+    /* FOOTER */
 
     .last-soos {
         padding: 0px 40px 40px 40px;
