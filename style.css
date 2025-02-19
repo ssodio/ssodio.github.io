@@ -29,7 +29,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 240px;
+    align-items: end;
+    padding: 24px 360px;
     background-color: #FEFEFA;
     position: sticky;
     top: 0;
@@ -42,7 +43,7 @@ ul.navbar {
     flex-wrap: wrap;
     position: sticky;
     width: 100%;
-    gap: 0.8em;
+    gap: 0.2em 0.8em;
 }
 
 ul.navbar li {
@@ -164,10 +165,15 @@ ul.navbar li a:hover {
     display: flex;
     gap: 0.6em;
     flex-direction: column;
+    
 }
 
 #school-logo {
     max-width: 8em;
+}
+
+.school-info {
+    flex: 1;
 }
 
 /* EXPERIENCE */
@@ -208,7 +214,7 @@ ul.navbar li a:hover {
 }
 
 .tab-content {
-    max-width: 44em;
+    flex: 1;
 }
 
 .tab-content h3 {
@@ -343,7 +349,7 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 100px 240px 40px 240px;
+    padding: 100px 360px 40px 360px;
 }
 
 .center-title-section {
@@ -351,7 +357,7 @@ h4 {
     align-items: center;
     flex-direction: column;
     gap: 1em;
-    padding: 100px 240px 40px 240px;
+    padding: 100px 360px 40px 360px;
 }
 
 /* RESPONSIVENESS */
@@ -437,8 +443,13 @@ h4 {
 
     /* EXPERIENCE */
 
+    .tabs {
+        max-width: 30%;
+    }
+
     .experience-content {
         gap: 1em;
+        flex: 1;
     }
     
     /* SKILLS */
