@@ -29,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-items: end;
+    align-items: center;
     padding: 24px 360px;
     background-color: #FEFEFA;
     position: sticky;
@@ -139,12 +139,12 @@ ul.navbar li a:hover {
 }
 
 .projects img {
-    width: 18em;
+    width: 14em;
     border-radius: 0.4em;
 }
 
 .projects a img {
-    width: 16em;
+    width: 14em;
     border-radius: 0.4em;
 }
 
@@ -187,7 +187,7 @@ ul.navbar li a:hover {
 
 .experience-content {
     display: flex;
-    gap: 3em;
+    gap: 1em;
 }
 
 [data-tab-content] {
@@ -205,12 +205,12 @@ ul.navbar li a:hover {
     gap: 1em;
     margin: 0;
     padding: 0;
+    max-width: 16em;
 }
 
 .tab {
     cursor: pointer;
     padding-left: 0.6em;
-    max-width: 16em;
 }
 
 .tab-content {
@@ -312,7 +312,7 @@ ul {
     margin: 0px;
     letter-spacing: 0.015em;
     font-family: 'Figtree';
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h1 {
@@ -333,7 +333,7 @@ h3 {
     color: #528c02;
     font-family: 'Figtree-Bold';
     letter-spacing: 0.015em;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px;
 }
 
@@ -341,7 +341,7 @@ h4 {
     color: #528c02;
     font-family: 'Figtree-Italic';
     letter-spacing: 0.015em;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px;
 }
 
@@ -361,6 +361,46 @@ h4 {
 }
 
 /* RESPONSIVENESS */
+
+@media only screen and (max-width: 1300px) {
+    .right-title-section {
+        gap: 1em;
+        padding: 100px 180px 40px 180px;
+    }
+
+    .center-title-section {
+        gap: 1em;
+        padding: 100px 180px 40px 180px;
+    }
+
+    .main-nav {
+        padding: 20px 180px;
+    }
+
+    .landing-page {
+        margin: 0;
+        padding: 10px 0px 0px 0px;
+        gap: 1em;
+        overflow: hidden;
+    }
+
+    .last-soos {
+        padding: 40px;
+    }
+
+    .footer {
+        padding: 40px 10px;
+    }
+
+    .tabs {
+        width: 40%;
+    }
+
+    .skills-img img {
+        max-width: 6em;
+        border-radius: 0.8em;
+    }
+}
 
 @media only screen and (max-width: 850px) {
 
@@ -434,7 +474,7 @@ h4 {
     /* PORTFOLIO */
 
     .projects img {
-        width: 14em;
+        width: 12em;
     }
     
     .projects a img {
@@ -444,11 +484,14 @@ h4 {
     /* EXPERIENCE */
 
     .tabs {
-        max-width: 30%;
+        width: 30%;
     }
 
     .experience-content {
-        gap: 1em;
+        gap: 2em;
+    }
+
+    .tab-content {
         flex: 1;
     }
     
